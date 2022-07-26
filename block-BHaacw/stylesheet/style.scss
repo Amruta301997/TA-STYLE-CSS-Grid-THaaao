@@ -1,0 +1,67 @@
+
+body {
+    font-family: 'Archivo', sans-serif;
+    line-height: 1.2;
+    background-color: rgb(6, 84, 58);
+  }
+  
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+ }
+header{
+    padding: 10px 0px;
+   display: flex;
+    background-color: white;
+    border: 2px solid aquamarine;
+    ul{
+        display: flex;
+     
+    }
+    li{
+        list-style: none;
+        font-size: 20px;
+        color: rgb(18, 219, 152);
+        background-color: white;
+        justify-content: space-between;
+        padding-left: 100px;
+    }
+} 
+.grid-container{
+display: grid;
+padding: 20px;
+gap: .5rem;
+
+grid-template-areas: "cardOne cardTwo cardThree"
+                     "cardFour cardTwo cardFive "
+                     "cardFour cardTwo cardSix";
+grid-template-columns: 1fr 2fr 1fr;
+}
+.grid-container > div{
+    border: 2px solid grey;
+    background-color: aliceblue;
+}
+.grid > div:second-child{
+    grid-area: cardTwo;
+    height: 450px;
+}
+.grid{
+    font-size: 16px;
+    text-align: center;
+
+}
+
+.item2 img{
+ width: 150px;
+ height: 150px;
+}
+.item3 img{
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+}
+button{
+    text-align: start;
+}
